@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html>  
+<head>  
+  <title>GuessED</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   
+    .jumbotron {
+	background-image: url("nasif4.jpg"); 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	height: 300px;
+	color:white;
+    }
+
+    .row {
+	margin-right: 20px;
+	margin-left: 20px;
+    }
+
+    </style>
+</head>
+<body>
+
+  <!------NAVBAR------>
+
+  <div class="w3-bar w3-light-grey" color='#041E42'>
+    <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/GuessED.html" class="w3-bar-item w3-button">Home</a>
+    <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/About.html" class="w3-bar-item w3-button">About</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Choose a level <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/level1.html" class="w3-bar-item w3-button">Level 1 | Royal Mile</a>
+        <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/level2.html" class="w3-bar-item w3-button">Level 2 | Princes Street</a>
+        <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/level3.html" class="w3-bar-item w3-button">Level 3 | University</a>
+	<a href="https://www.geos.ed.ac.uk/~s2236682/asdm/level4.html" class="w3-bar-item w3-button">Level 4 | Stockbridge</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Jumbotron -->
+   
+     <div class="col-12 jumbotron">
+      <div class="container">
+	<h1>GuessED</h1>
+	<p>Edinburgh landmark guessing game!</p>
+      </div>
+     </div>
+
+     <center>
+       <h2>Stockbridge</h2>
+       <h3>Level 4 - Question 3</h3>
+       <h3>What is the name of the landmark that is <u>second</u> closest to St Bernard's Well?</h3>
+       <br>
+       <iframe src="https://www.geos.ed.ac.uk/~s1737656/cgi-bin/QUERY13_MAP.py" height="400px" width="600px"
+        frameborder="0" scrolling="no" id="iframe">
+</iframe>
+     </center>
+     
+
+<!----------------------------------------------------------->
+<!----------------------------Query-------------------------->
+<!---------------------Level 4 Question 3-------------------->
+<!---What is the area that is second closest to the well----->
+<!----------------------------------------------------------->
+     
+     <center>
+<form action="https://www.geos.ed.ac.uk/~s2236682/cgi-bin/asdm/L4Q3.py" method="GET">
+<div>
+  <label for="Landmark"><h2>Choose a Landmark</h2></label><br>
+  <input type="radio" name="place" id="place" value="Surgeons Hall" required>
+  <label for="surgeon">Surgeon's Hall Museum</label><br>
+  <input type="radio" name="place" id="place" value="Greyfriars Kirkyard" required>
+  <label for="greyfriars">Greyfriars Kirkyard</label><br>
+  <input type="radio" name="place" id="place" value="Dean Village" required>
+  <label for="dean">Dean Village</label><br>
+  <input type="radio" name="place" id="place" value="St Stephens Church" required>
+  <label for="church">St Stephen's Church</label><br>
+  
+</div>
+<button type="reset">Reset</button>
+<button type="submit">Submit</button>
+</form>
+
+<br>
+<br>
+
+<!---------------------------------------------------->
+<!--------------------Give me a hint------------------>
+<!---------------------------------------------------->
+
+<h3>Hint: </h3><h4>If you are stuck, use the layers <img src="./layers.jpg" style="width:auto;height:80px;" alt="layers">button to reveal the basemap for more information.<br>With the measure tool <img src="./measure.jpg" style="width:auto;height:80px;" alt="layers">you can measure distances and areas on the map.</h4>
+<br>
+
+<!------JavaScript for Hint------->
+
+      </section>
+      <br>
+      <script language="Javascript">
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	    coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+		    content.style.display = "none";
+		} else {
+		    content.style.display = "block";
+		}
+	    });
+	}
+      </script>
+
+      <!------JavaScript for Navbar------->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</center>
+
+<!----------------------------------->
+<!--------------Footer--------------->
+<!----------------------------------->
+
+<div class="footer_bottom_content" style="background-color:#041E42">
+      <span id="footer-line" style="line-height:100px">
+	<font color="#FFFFFF"><center>©GuessED Game,<a href="https://www.ed.ac.uk/geosciences" target="_blank"> School of GeoSciences, The University of Edinburgh<br><img align="center" src="./GeoSciences_white.png" alt="University logo" width="auto" height="85" object-fit="scale-down" /></a></center></font></span>
+      
+</body>
+</html>
+ 
+</html>
+ 
+

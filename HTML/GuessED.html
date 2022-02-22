@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GuessED</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   
+    .jumbotron {
+	background-image: url("nasif4.jpg"); 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	height: 300px;
+	color:white;
+    }
+
+    .row {
+	margin-right: 20px;
+	margin-left: 20px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+  <!------NAVBAR------>
+
+  <div class="w3-bar w3-light-grey">
+    <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/GuessED.html" class="w3-bar-item w3-button">Home</a>
+    <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/About.html" class="w3-bar-item w3-button">About</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Choose a level <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/level1.html" class="w3-bar-item w3-button">Level 1 | Royal Mile</a>
+        <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/level2.html" class="w3-bar-item w3-button">Level 2 | Princes Street</a>
+        <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/level3.html" class="w3-bar-item w3-button">Level 3 | University</a>
+	<a href="https://www.geos.ed.ac.uk/~s2236682/asdm/level4.html" class="w3-bar-item w3-button">Level 4 | Stockbridge</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- Jumbotron -->
+   
+     <div class="col-12 jumbotron">
+      <div class="container">
+	<h1>GuessED</h1>
+	<p>Edinburgh landmark guessing game!</p>
+      </div>
+    </div>
+
+  <!-- Jumbotron -->
+
+  
+     <div class="container">
+        <div class="row">
+	 <div class="col text-center">
+       
+  <h2><b>Test your Edinburgh local knowledge</b></h2>
+  <br>
+    <h3>See how much you really know about the City of Edinburgh.</h3>
+    <h3>You will be presented with some scenarios. Identify the landmarks in the correct order in which they are shown to get points!</h3>
+</div>
+	</div>
+     </div>
+     <br>
+     <br>
+     <div class="container">
+       <div class="row">
+	 <div class="col text-center">
+  <h3> Are you ready?</h3>
+  <button type="button" class="btn btn-info btn-lg">
+    <a href="https://www.geos.ed.ac.uk/~s2236682/asdm/levels.html">START!</a></button>
+	 </div>
+       </div>
+       </div>
+  </div>
+</div>
+
+<br>
+
+<!----------------------------------->
+<!--------------Footer--------------->
+<!----------------------------------->
+
+<div class="footer_bottom_content" style="background-color:#041E42">
+      <span id="footer-line" style="line-height:100px">
+	<font color="#FFFFFF"><center>©GuessED Game,<a href="https://www.ed.ac.uk/geosciences" target="_blank"> School of GeoSciences, The University of Edinburgh<br><img align="center" src="./GeoSciences_white.png" alt="University logo" width="auto" height="85" object-fit="scale-down" /></a></center></font></span>
+
+      <!------JavaScript for Navbar------->
+
+     <script>
+       function myFunction() {
+	   var x = document.getElementById("demo");
+	   if (x.className.indexOf("w3-show") == -1) {
+	       x.className += " w3-show";
+	   } else {
+	       x.className = x.className.replace(" w3-show", "");
+	   }
+       }
+     </script>
+
+</body>
+</html>
