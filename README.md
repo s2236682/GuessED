@@ -22,6 +22,7 @@ In the guessing component of the game, users are presented with a question, a ma
 Our group took advantage of the capabilities offered by Oracle Spatial. 
 
 GuessED’s data model comprises of 5 tables as seen below:
+
 ![Data Model](Images/datamodel.jpg "Data Model") 
 
 OGR2OGR automatically assigns a primary key (OGR_FID) to each table and saves the geometry as “ORA_GEOMETRY”. Furthermore, OGR automatically creates a metadata table and assigns a spatial index to objects in the ORA_GEOMETRY. [Learn more](https://gdal.org/drivers/vector/oci.html)
