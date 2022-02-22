@@ -17,7 +17,7 @@ ogr2ogr -overwrite -f OCI OCI:<username>/<password>@database "C:\Workspace\Examp
 
 In the guessing component of the game, users are presented with a question, a map inset, a series of radio buttons from which to pick what they believe is the correct answer and, lastly, a hint on how to answer the question. Upon clicking on the “submit” button, a Python script runs, using Python extension module cx_Oracle to query our database.
 
-## :filecabinet: Database
+## :file_cabinet: Database
 ### Data model
 Our group took advantage of the capabilities offered by Oracle Spatial. 
 
