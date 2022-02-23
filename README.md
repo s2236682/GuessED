@@ -39,7 +39,7 @@ To identify the correctness of the submitted answer, once the selected option is
 ### :desktop_computer: Display Component
 The game's display component uses folium maps that are embedded into each question's html page. These maps provide the user with contextual information and the tools to answer the question.
 
-The data dispalyed on the maps is retrieved directly from the database via specifically designed queries. These return Oracle Spatial geometries that are converted to WKT format on-the-fly using the SDO_UTIL.TO_WKTGEOMETRY method. Then, using a Python script, each returned WKT object is transformed into a list of longitude and latitude coordinates, which are the passed into folium for plotting. A simplified diagram to illustrate the procedure is shown below:
+The data dispalyed on the maps is retrieved directly from the database via specifically designed queries. These return Oracle Spatial geometries that are converted to WKT format on-the-fly using the ```SDO_UTIL.TO_WKTGEOMETRY``` method. Then, using a Python script, each returned WKT object is transformed into a list of longitude and latitude coordinates, which are the passed into folium for plotting. A simplified diagram to illustrate the procedure is shown below:
 ![Display](Images/display.jpg "Display")
 
 ## :brain: Project Team
